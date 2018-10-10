@@ -11,6 +11,12 @@ module.exports = {
           type: 'users',
           id: 1
         }
+      },
+      comments: {
+        data: [{
+          type: 'comments',
+          id: 1
+        }, ],
       }
     }
   },

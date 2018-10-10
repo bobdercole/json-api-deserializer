@@ -3,7 +3,7 @@ const normalizeToArray = (list) => {
 };
 
 const getResource = (resources, type, id) => {
-  return (resources[type] || {})[id];
+  return (resources[type] || {})[id] || { id, type };
 };
 
 const parseResources = (list) => {

@@ -52,5 +52,9 @@ describe('#deserializer', function () {
     expect(json.content).to.eql('lorem ipsum');
     expect(json.author).to.exist;
     expect(json.author.name).to.eql('John');
+
+    const comment = json.comments[0];
+    expect(comment).to.exist;
+    expect(comment.id).to.eql(1);
   });
 });
